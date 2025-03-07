@@ -12,6 +12,7 @@ export class AppComponent {
     var loaderUrl = buildUrl + "Build.loader.js";
     var script = document.createElement("script");
     script.src = loaderUrl;
+
     script.onload = () => {
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "./assets/wasm/Build.data",

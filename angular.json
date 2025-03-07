@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": ["src/assets/wasm/Build.loader.js"]
+            "scripts": [
+              "src/assets/wasm/Build.loader.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -69,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "teste_wasm:build:production"
+              "buildTarget": "teste_wasm:build:production"
             },
             "development": {
-              "browserTarget": "teste_wasm:build:development"
+              "buildTarget": "teste_wasm:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "teste_wasm:build"
+            "buildTarget": "teste_wasm:build"
           }
         },
         "test": {
